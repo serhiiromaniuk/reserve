@@ -1,0 +1,29 @@
+{
+  "name": "@reserve/migrator",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Serhii Romaniuk <serhii.romaniuk@ambisafe.com>",
+  "homepage": "https://github.com/serhiiromaniuk/reserve#readme",
+  "license": "MIT",
+  "main": "lib/migrator.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serhiiromaniuk/reserve.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/serhiiromaniuk/reserve/issues"
+  }
+}

@@ -7,7 +7,7 @@ const styling = {
     width: '270.7px',
     height: '80px',
     left: '74px',
-    top: '28px'
+    top: '10px'
 }
 
 export function LogoHeader() {

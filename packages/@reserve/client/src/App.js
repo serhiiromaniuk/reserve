@@ -1,11 +1,28 @@
-import { Header } from './Header'
+import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { MainPage } from './Pages'
 
-function App() {
-  return (
-    <div>
-      <Header/>
-    </div>
-  )
+export default function App() {
+    return (
+        <div>
+            <BrowserRouter>
+                <Switch>
+                    {
+                        // Main Pages 
+                    }
+                    <Route exact path='/'>
+                    <MainPage/>
+                    </Route>
+
+                    {
+                        // Auth Pages 
+                    }
+
+                    {
+                        // Middlware Pages 
+                    }
+                </Switch>
+            </BrowserRouter>
+        </div>
+    )
 }
-
-export default App

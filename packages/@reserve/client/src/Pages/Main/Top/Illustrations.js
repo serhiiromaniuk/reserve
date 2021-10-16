@@ -8,9 +8,17 @@ const styling = {
     top: '75px'
 }
 
-export default function Illustration() {
+export function Illustration() {
     return (
         <div style={styling}>
+        </div>
+    )
+}
+
+export function SearchIcon() {
+    return (
+        <div style={{margin: '10px'}}>
+            <img src='/images/search_button.svg' width='28px' alt='search-icon'/>
         </div>
     )
 }

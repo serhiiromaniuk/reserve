@@ -12,6 +12,7 @@
     "bootstrap": "npm run help && npm run clean && npm i && lerna bootstrap"
   },
   "dependencies": {
+    "@mui/icons-material": "^5.0.4",
     "@testing-library/dom": ">=7.21.4",
     "config": "^3.3.6",
     "lerna": "^4.0.0",

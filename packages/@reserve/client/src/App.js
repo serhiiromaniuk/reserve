@@ -11,7 +11,7 @@ export default function App() {
                         // Main Pages 
                     }
                     <Route exact path='/'>
-                    <MainPage/>
+                        <MainPage/>
                     </Route>
 
                     {

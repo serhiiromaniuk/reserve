@@ -4,7 +4,7 @@ import { BootstrapSignUp, BootstrapLogIn, BootstrapStack } from './style'
 function SignUpButton() {
     return (
         <div>
-            <BootstrapSignUp variant="text">
+            <BootstrapSignUp variant='text'>
             SIGN UP
             </BootstrapSignUp>
         </div>
@@ -14,7 +14,7 @@ function SignUpButton() {
 function LogInButton() {
     return (
         <div>
-            <BootstrapLogIn variant="text">
+            <BootstrapLogIn variant='text'>
             LOG IN
             </BootstrapLogIn>
         </div>

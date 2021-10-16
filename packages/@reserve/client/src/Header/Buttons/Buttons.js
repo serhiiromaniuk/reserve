@@ -4,7 +4,7 @@ import { BootstrapButton, BootstrapStack } from './style'
 function StyledButton({name}) {
     return (
         <div>
-            <BootstrapButton variant="text">
+            <BootstrapButton variant='text'>
             {name}
             </BootstrapButton>
         </div>

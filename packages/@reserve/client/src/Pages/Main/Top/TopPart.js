@@ -1,4 +1,4 @@
-import Illustration from './Illustration'
+import { Illustration } from './Illustrations'
 import TitleAndText from './TitleAndText'
 import Search from './Search'
 

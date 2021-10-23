@@ -5,8 +5,8 @@ import { Input } from '@mui/material'
 import Checkbox from '@mui/material/Checkbox'
 import { SearchIcon } from './Illustrations'
 
-function LoginC() {
-	const [checked, setChecked] = useState(false)
+function Login() {
+	const [ checked, setChecked ] = useState(false)
 	
 	const defaults = {
 		fontFamily: 'Montserrat',
@@ -35,7 +35,7 @@ function LoginC() {
 		...defaults
 	}
 	  
-	const checBoxStyling = {
+	const checkBoxStyling = {
 		position: 'absolute',
 		color: '#2C2C2C',
 		width: '50px',
@@ -45,7 +45,7 @@ function LoginC() {
 		...defaults
 	}
 	  
-	const checBoxTextStyling = {
+	const checkBoxTextStyling = {
 		position: 'absolute',
 		left: '175px',
 		top: '567px',
@@ -65,22 +65,22 @@ function LoginC() {
 					style={InputField}
 					placeholder='Search...'
 					endAdornment={
-					<InputAdornment>
-						<SearchIcon/>
-					</InputAdornment>
+						<InputAdornment>
+							<SearchIcon/>
+						</InputAdornment>
 					}
 				/>
 			</div>
 
 			<Checkbox
 				sx={{ '& .MuiSvgIcon-root': { fontSize: 34 } }}
-				style={checBoxStyling}
+				style={checkBoxStyling}
 				checked={checked}
 				onChange={handleCheck}
 			/>
-			<p style={checBoxTextStyling}>Near by me</p>
+			<p style={checkBoxTextStyling}>Near by me</p>
 		</>
 	)
 }
 
-export default LoginC
+export default Login

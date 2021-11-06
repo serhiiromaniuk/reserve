@@ -1,10 +1,11 @@
 import Paragraph from './Paragraph'
-// import Search from './Search'
+import { Card } from '../../../Assets'
 
 export function MidPart() {
     return (
         <div>
             <Paragraph/>
+            <Card/>
         </div>
     )
 }

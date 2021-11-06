@@ -1,4 +1,5 @@
 import { TopPart } from './Top'
+import { MidPart } from './Mid'
 import { Header } from '../../Header'
 
 export function MainPage() {
@@ -6,6 +7,7 @@ export function MainPage() {
         <div>
             <Header/>
             <TopPart/>
+            <MidPart/>
         </div>
     )
 }

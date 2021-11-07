@@ -1,33 +1,34 @@
 import * as React from 'react'
-import { SearchIcon } from '../../../Assets'
+import { SearchIcon } from './Icons'
 
 const defaults = {
     position: 'absolute',
     width: '437px',
     height: '63px',
     left: '124px',
-    top: '910px',
     
     fontFamily: 'Montserrat',
     fontStyle: 'normal',
     fontWeight: 'bold',
-    fontSize: '55px',
+    fontSize: '50px',
     lineHeight: '67px',
     color: '#000000',
     // textShadow: '1px 1px 4px rgba(0, 0, 0, 0.25)'
 }
 
-export default function Paragraph() {
+const iconDefaults = {
+    position: 'absolute',
+    float: 'left',
+    left: '525px'
+}
+
+export function Paragraph(props) {
     return (
         <div>
-            <p style={defaults}>
-                Popular places
+            <p style={{...defaults, ...props.style}}>
+                {props.text || 'Paragraph\'s text'}
             </p>
-            <SearchIcon style={{
-                position: 'absolute',
-                left: '561px',
-                top: '979px'
-            }}/>
+            <SearchIcon style={{...iconDefaults, ...props.iconStyle}}/>
         </div>
     )
 }

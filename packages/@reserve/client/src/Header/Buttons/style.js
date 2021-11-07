@@ -3,14 +3,14 @@ import Button from '@mui/material/Button'
 import Stack from '@mui/material/Stack'
 
     // DEMO ONLY //
-// import { purple } from '@mui/material/colors';
+// import { purple } from '@mui/material/colors'
 // const ColorButton = styled(Button)(({ theme }) => ({
 //   color: theme.palette.getContrastText(purple[500]),
 //   backgroundColor: purple[500],
 //   '&:hover': {
 //     backgroundColor: purple[700],
 //   },
-// }));
+// }))
 
 export const BootstrapStack = styled(Stack)({
     position: 'absolute',

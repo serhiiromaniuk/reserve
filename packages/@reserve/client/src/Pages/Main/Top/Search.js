@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import InputAdornment from '@mui/material/InputAdornment'
 import { Input } from '@mui/material'
 import Checkbox from '@mui/material/Checkbox'
-import { SearchIcon } from '../../../Assets'
+import { SearchIcon } from '../../../Components'
 
 function Login() {
 	const [ checked, setChecked ] = useState(false)

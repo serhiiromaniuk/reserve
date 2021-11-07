@@ -1,4 +1,4 @@
-import { MainPageIllustration } from '../../../Assets'
+import { MainPageIllustration } from '../../../Components'
 import TitleAndText from './TitleAndText'
 import Search from './Search'
 

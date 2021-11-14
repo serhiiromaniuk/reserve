@@ -1,5 +1,17 @@
 import { Card, ButtonBig, Paragraph} from '../../../Components'
-import { BootstrapStack } from './style'
+import { StackStyle } from './style'
+import { styled } from '@mui/material/styles'
+import Stack from '@mui/material/Stack'
+
+const BootstrapStack = styled(Stack)(
+    StackStyle()
+)
+
+const BootstrapStackSecondary = styled(Stack)(
+    StackStyle({
+        top: '1900px'
+    })
+)
 
 function SpawnStack() {
     const data = [
@@ -67,7 +79,6 @@ function SpawnStack() {
 }
 
 export function MidPart() {
-
     return (
         <div>
             <Paragraph style={{top: '910px'}} iconStyle={{top: '973px'}} text='Popular places'/>
@@ -78,6 +89,11 @@ export function MidPart() {
 
             <ButtonBig style={{top: '1645px', left: '685px'}} text='Search'/>
             <Paragraph style={{top: '1730px'}} iconStyle={{top: '1795px', left: '568px'}} text='Cool places here'/>
+
+            <BootstrapStackSecondary direction='row' spacing={15}>
+                <SpawnStack/>
+            </BootstrapStackSecondary>
+            <ButtonBig style={{top: '2465px', left: '685px'}} text='Search'/>
         </div>
     )
 }

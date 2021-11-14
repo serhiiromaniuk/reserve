@@ -23,10 +23,9 @@ export function SearchIcon(props) {
         }}>
             <Button style={{
                 borderRadius: '15px',
-                color: '#000000',
+                color: 'white',
                 minWidth: '28px',
-                padding: '0px',
-                '-webkit-tap-highlight-color': 'black'
+                padding: '0px'
             }}>
                 <img src='/images/search_button.svg' width='28px' position='center' alt='search-icon'/>
             </Button>
@@ -36,8 +35,8 @@ export function SearchIcon(props) {
 
 export function StarIcon(props) {
     const style = {
-        width: '33px',
-        height: '33px',
+        width: '28px',
+        height: '28px',
         color: 'black',
         ...props.style
     }

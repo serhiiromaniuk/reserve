@@ -65,7 +65,7 @@ function Login() {
 					style={InputField}
 					placeholder='Search...'
 					endAdornment={
-						<InputAdornment>
+						<InputAdornment position='start'>
 							<SearchIcon/>
 						</InputAdornment>
 					}

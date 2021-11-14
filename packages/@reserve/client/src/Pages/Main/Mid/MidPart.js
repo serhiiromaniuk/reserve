@@ -6,9 +6,9 @@ function SpawnStack() {
         {
             imgUrl: '/images/pic.svg',
             title: 'Saint Apollo',
-            reviews: '12',
+            reviews: 1,
             price: {
-                number: '100',
+                number: 100.99,
                 symbol: '$'
             },
             location: {
@@ -18,15 +18,17 @@ function SpawnStack() {
             tags: [
                 'test',
                 'tags',
-                'here'
+                'tags',
+                'tags',
+                'tags',
             ]
         },
         {
             imgUrl: '/images/pic.svg',
             title: 'Short',
-            reviews: '12',
+            reviews: 12,
             price: {
-                number: '100',
+                number: 0.22,
                 symbol: '$'
             },
             location: {
@@ -34,20 +36,21 @@ function SpawnStack() {
                 city: 'NY'
             },
             tags: [
-                'test',
-                'tags',
-                'tags',
-                'tags',
-                'tags',
+                'dry',
+                'ocean',
+                'hot',
+                'salt',
+                'open',
+                'tags6ad',
                 'here'
             ]
         },
         {
             imgUrl: '/images/search_button.svg',
             title: 'Long here PUBLIC PUB HERE',
-            reviews: '12',
+            reviews: 12,
             price: {
-                number: '1000',
+                number: 1000,
                 symbol: '&'
             },
             location: {
@@ -60,7 +63,7 @@ function SpawnStack() {
         }
     ]
 
-    return data.map(i => <Card data={i}/>)
+    return data.map((k, i) => <Card key={`myId${i}`} data={k}/>)
 }
 
 export function MidPart() {

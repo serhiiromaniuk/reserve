@@ -1,5 +1,4 @@
-import { TopPart } from './Top'
-import { MidPart } from './Mid'
+import { TopPart, MidPart } from './Components'
 import { Header } from '../../Header'
 
 export function MainPage() {

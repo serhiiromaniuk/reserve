@@ -21,15 +21,24 @@
     "url": "git+https://github.com/serhiiromaniuk/reserve.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1",
     "build": "babel src -d dist --verbose --compact true --delete-dir-on-start",
-    "db:up": "docker-compose up -f ./src/config/local.database.yaml -d",
-    "db:down": "docker-compose down -f ./src/config/local.database.yaml -v"
+    "start": "node dist/config/knexfile",
+    "db:up": "docker-compose -f ./src/config/local.database.yaml up -d",
+    "db:down": "docker-compose -f ./src/config/local.database.yaml down -v"
   },
   "bugs": {
     "url": "https://github.com/serhiiromaniuk/reserve/issues"
   },
   "dependencies": {
-    "knex": "^0.95.14"
+    "aws-sdk": "^2.929.0",
+    "config": "^3.3.6",
+    "dotenv": "^10.0.0",
+    "knex": "^0.95.14",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/register": "^7.14.5"
   }
 }

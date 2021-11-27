@@ -1,18 +1,15 @@
 {
   "name": "@reserve/server",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "> TODO: description",
   "author": "Serhii Romaniuk <serhii.romaniuk@ambisafe.com>",
   "homepage": "https://github.com/serhiiromaniuk/reserve#readme",
   "license": "MIT",
-  "main": "lib/server.js",
+  "main": "dist/index.js",
   "directories": {
-    "lib": "lib",
+    "src": "src",
     "test": "__tests__"
   },
-  "files": [
-    "lib"
-  ],
   "publishConfig": {
     "registry": "https://registry.yarnpkg.com"
   },
@@ -25,5 +22,17 @@
   },
   "bugs": {
     "url": "https://github.com/serhiiromaniuk/reserve/issues"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.929.0",
+    "config": "^3.3.6",
+    "dotenv": "^10.0.0",
+    "knex": "^0.95.14",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/register": "^7.14.5"
   }
 }

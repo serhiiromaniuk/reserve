@@ -4,6 +4,6 @@ module.exports = {
         name: 'reserve',
         user: 'user',
         password: 'password',
-        port: 3306
+        port: 3307
     }
 }

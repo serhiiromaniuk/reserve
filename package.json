@@ -10,13 +10,12 @@
     "help": "echo \"=> Install NVM for avoid version inconsitencies, current version $(node --version)\"",
     "clean": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' + && find . -name 'dist' -type d -prune -exec rm -rf '{}' +",
     "bootstrap": "npm run help && npm ci && lerna bootstrap",
+    "build": "lerna run build && lerna link",
     "start:client": "lerna run start --scope @reserve/client"
   },
   "dependencies": {
     "@mui/icons-material": "^5.0.4",
-    "@testing-library/dom": ">=7.21.4",
-    "config": "^3.3.6",
-    "uuid": "^8.3.2"
+    "@testing-library/dom": ">=7.21.4"
   },
   "peerDependencies": {
     "uuid": "^8.3.2"

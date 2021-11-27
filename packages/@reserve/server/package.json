@@ -18,14 +18,13 @@
     "url": "git+https://github.com/serhiiromaniuk/reserve.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "build": "babel src -d dist --verbose --compact true --delete-dir-on-start"
   },
   "bugs": {
     "url": "https://github.com/serhiiromaniuk/reserve/issues"
   },
   "dependencies": {
     "aws-sdk": "^2.929.0",
-    "config": "^3.3.6",
     "dotenv": "^10.0.0",
     "knex": "^0.95.14",
     "mysql": "^2.18.1"

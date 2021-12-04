@@ -22,9 +22,10 @@
   },
   "scripts": {
     "build": "babel src -d dist --verbose --compact true --delete-dir-on-start",
-    "db:make-migration": "knex migrate:make rename-me",
-    "db:migrate-up": "DATABASE_DIR=build knex migrate:up",
-    "db:migrate-down": "DATABASE_DIR=build knex migrate:down",
+    "db:migrate:make": "knex migrate:make rename-me",
+    "db:migrate:up": "npm run build && DATABASE_DIR=dist knex migrate:latest",
+    "db:migrate:down": "npm run build && DATABASE_DIR=dist knex migrate:down",
+    "db": "node dist/utils/script.js",
     "db:up": "node dist/utils/script.js up -d && node dist/utils/script.js ps",
     "db:down": "node dist/utils/script.js down -v"
   },

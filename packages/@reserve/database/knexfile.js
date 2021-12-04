@@ -16,8 +16,7 @@ module.exports = {
             host: db.host,
             user: db.user,
             password: db.password,
-            
-            database: db.name,
+            database: db.database,
             charset: 'utf8'  
         },
         debug: true,

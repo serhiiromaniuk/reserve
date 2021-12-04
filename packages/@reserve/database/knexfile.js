@@ -1,6 +1,7 @@
-const { db } = require('@reserve/utils').config
+import { config } from '@reserve/utils'
+const { db } = config
 
-module.exports = {
+export default {
     development: {
         migrations: {
             tableName: 'migr_locks',

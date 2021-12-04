@@ -25,6 +25,6 @@ echo "=> Local database operations." \
             console.error(stderr)
             return
         }
-        console.log(stdout);
+        console.log(stdout)
     }
 )

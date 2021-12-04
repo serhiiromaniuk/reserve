@@ -6,6 +6,7 @@
   "homepage": "https://github.com/serhiiromaniuk/reserve#readme",
   "license": "ISC",
   "main": "dist/index.js",
+  "typings": "dist/index.js",
   "directories": {
     "src": "src",
     "test": "__tests__"

@@ -9,7 +9,7 @@
   "scripts": {
     "help": "echo \"=> Install NVM for avoid version inconsitencies, current version $(node --version)\"",
     "clean": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' + && find . -name 'dist' -type d -prune -exec rm -rf '{}' +",
-    "bootstrap": "npm run help && npm ci && lerna bootstrap",
+    "bootstrap": "npm run help && npm run clean && npm ci && lerna bootstrap",
     "build": "lerna run build && lerna link",
     "start:client": "lerna run start --scope @reserve/client"
   },
@@ -21,8 +21,8 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
-    "yarn": "^1.22.15",
-    "lerna": "^4.0.0"
+    "lerna": "^4.0.0",
+    "yarn": "^1.22.15"
   },
   "private": true,
   "workspaces": [

@@ -1,1 +1,2 @@
-export * from './tables'
+export * from './Tables'
+export * from './ops'

@@ -11,7 +11,7 @@ export default {
             tableName: 'seed_locks',
             directory: `${__dirname}/${db.dir}/seeders`
         },
-
+    
         client: 'mysql',
         connection: {
             host: db.host,
@@ -20,7 +20,11 @@ export default {
             database: db.database,
             charset: 'utf8'  
         },
-        debug: true,
+        debug: process.env.DB_DEBUG || false,
+        pool: {
+            min: 0,
+            max: 10
+        },
         acquireConnectionTimeout: 10000
     }
 }

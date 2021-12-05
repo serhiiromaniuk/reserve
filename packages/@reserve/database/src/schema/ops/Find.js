@@ -2,10 +2,10 @@ import knex from 'knex'
 import { KnexInit } from '../../utils'
 import knexfile from '../../utils/knexfile'
 
-export async function FindData(table, data, whereClause, lim = 20) {
+export async function FindData(table, data = '*', lim = 3) {
     const tx = KnexInit(knexfile.development)
     try {
-        const query = await tx.select(data).from(table).where(whereClause).limit(lim).timeout(4000, { cancel: true })
+        const query = await tx.select(data).from(table).limit(lim).timeout(4000, { cancel: true })
         await tx.destroy()
         return {
             ok: true,

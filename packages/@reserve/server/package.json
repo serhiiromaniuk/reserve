@@ -18,12 +18,17 @@
     "url": "git+https://github.com/serhiiromaniuk/reserve.git"
   },
   "scripts": {
-    "build": "babel src -d dist --verbose --compact true --delete-dir-on-start"
+    "build": "babel src -d dist --verbose --delete-dir-on-start",
+    "start": "npm run build && node dist/Server.js"
   },
   "bugs": {
     "url": "https://github.com/serhiiromaniuk/reserve/issues"
   },
   "dependencies": {
+    "@reserve/utils": "0.0.1",
+    "@reserve/database": "0.0.1",
+    "@hapi/hapi": "^20.1.4",
+    "@hapi/inert": "^6.0.3",
     "aws-sdk": "^2.929.0",
     "dotenv": "^10.0.0",
     "knex": "^0.95.14",

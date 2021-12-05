@@ -3,7 +3,7 @@ import { InsertData, UpdateData, DeleteData, FindData, names } from '../src/sche
 describe('Insert / update / delete & select operations', () => {
   
     it('should isert data', async () => {
-        const q = await InsertData(names.places_tags_lists, {
+        const q = await InsertData(Names.places_tags_lists, {
             name: 'insertingData'
         })
 
@@ -11,7 +11,7 @@ describe('Insert / update / delete & select operations', () => {
     })
 
     it('should update data', async () => {
-        const q = await UpdateData(names.places_tags_lists, {
+        const q = await UpdateData(Names.places_tags_lists, {
             name: 'insertingData'
         },
         {
@@ -21,15 +21,13 @@ describe('Insert / update / delete & select operations', () => {
     })
 
     it('should select data', async () => {
-        const q = await FindData(names.places_tags_lists, 'name',{
-            name: 'updatingData'
-        })
+        const q = await FindData(Names.places_tags_lists, 'name')
         console.log(q)
         expect(q.ok).toEqual(true)
     })
 
     it('should delete data', async () => {
-        const q = await DeleteData(names.places_tags_lists, {
+        const q = await DeleteData(Names.places_tags_lists, {
             name: 'updatingData'
         })
         console.log(q)

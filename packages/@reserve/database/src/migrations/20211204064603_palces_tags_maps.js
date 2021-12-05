@@ -1,5 +1,5 @@
-import { names } from'../schema'
-const tableName = names.places_tags_maps
+import { Names } from '../schema'
+const tableName = Names.places_tags_maps
 
 export function up(knex) {
     return knex.schema.createTable(tableName,
@@ -8,9 +8,9 @@ export function up(knex) {
             tx.integer('tag_id').unsigned().notNullable()
 
             tx.foreign('place_id').references('id')
-                .inTable(names.places_details)
+                .inTable(Names.places_details)
             tx.foreign('tag_id').references('id')
-                .inTable(names.places_tags_lists)
+                .inTable(Names.places_tags_lists)
         }
         
     )

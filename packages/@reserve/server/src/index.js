@@ -1,6 +1,6 @@
-'use strict';
+'use strict'
 
-module.exports = server;
+module.exports = server
 
 function server() {
     // TODO

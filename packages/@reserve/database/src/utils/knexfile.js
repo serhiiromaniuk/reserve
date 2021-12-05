@@ -5,11 +5,11 @@ export default {
     development: {
         migrations: {
             tableName: 'migr_locks',
-            directory: `${__dirname}/${db.dir}/migrations`
+            directory: `${__dirname}/../../${db.dir}/migrations`
         },
         seeds: {
             tableName: 'seed_locks',
-            directory: `${__dirname}/${db.dir}/seeders`
+            directory: `${__dirname}/../../${db.dir}/seeders`
         },
     
         client: 'mysql',

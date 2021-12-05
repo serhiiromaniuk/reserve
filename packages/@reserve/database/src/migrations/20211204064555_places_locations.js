@@ -1,5 +1,5 @@
-import { names } from'../schema'
-const tableName = names.places_locations
+import { Names } from '../schema'
+const tableName = Names.places_locations
 
 export function up(knex) {
     return knex.schema.createTable(tableName, 

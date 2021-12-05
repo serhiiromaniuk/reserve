@@ -1,1 +1,2 @@
-export * as config from './schema'
+export * from './schema'
+export * from './utils'

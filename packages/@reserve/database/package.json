@@ -23,7 +23,7 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "babel src -d dist --verbose --compact true --delete-dir-on-start",
+    "build": "babel src -d dist --verbose --delete-dir-on-start",
     "db:migrate:make": "npm run build && knex migrate:make rename-me --esm  --knexfile ./src/utils/knexfile.js",
     "db:migrate:up": "npm run build && DATABASE_DIR=dist knex migrate:latest --esm --knexfile ./src/utils/knexfile.js",
     "db:migrate:down": "npm run build && DATABASE_DIR=dist knex migrate:down --esm --knexfile ./src/utils/knexfile.js",

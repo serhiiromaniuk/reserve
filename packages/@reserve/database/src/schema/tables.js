@@ -1,4 +1,4 @@
-export const names = {
+export const Names = {
     places_details: 'places_details', // collected info
     places_tags_maps: 'places_tags_maps', // tags
     places_tags_lists: 'places_tags_lists', // tags

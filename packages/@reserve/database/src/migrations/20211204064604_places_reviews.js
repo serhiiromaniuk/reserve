@@ -1,5 +1,5 @@
-import { names } from'../schema'
-const tableName = names.places_reviews
+import { Names } from '../schema'
+const tableName = Names.places_reviews
 
 export function up(knex) {
     return knex.schema.createTable(tableName,
@@ -10,7 +10,7 @@ export function up(knex) {
             tx.text('comment').notNullable()
 
             tx.foreign('place_id').references('id')
-                .inTable(names.places_details)
+                .inTable(Names.places_details)
         }
         
     )

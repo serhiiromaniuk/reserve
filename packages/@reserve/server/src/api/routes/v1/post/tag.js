@@ -4,11 +4,11 @@ const { server } = config
 
 export default {
     method: 'POST',
-    path: server.api.routes.v1.post.card,
+    path: server.api.routes.v1.post.tag,
     handler: async (req, h) => {
         try {
             const { payload } = req
-            const q = await InsertData(Names.places_details, payload)
+            const q = await InsertData(Names.places_tags_lists, payload)
             if (!q.ok) throw new Error(q.message)
             return {
                 ok: true,

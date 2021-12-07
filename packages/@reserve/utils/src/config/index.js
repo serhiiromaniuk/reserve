@@ -20,7 +20,8 @@ export const config = {
                         card: '/api/v1/get/card'
                     },
                     post: {
-                        card: '/api/v1/post/card'
+                        card: '/api/v1/post/card',
+                        tag: '/api/v1/post/tag'
                     }
                 }
             }

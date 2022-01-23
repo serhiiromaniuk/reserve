@@ -1,4 +1,4 @@
-import { InsertData, UpdateData, DeleteData, FindData, names } from '../src/schema'
+import { InsertData, UpdateData, DeleteData, FindData, Names } from '../src/schema'
 
 describe('Insert / update / delete & select operations', () => {
   

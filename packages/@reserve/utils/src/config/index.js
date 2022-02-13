@@ -10,6 +10,16 @@ export const config = {
     server: {
         host: process.env.SERVER_HOST || 'localhost',
         port: process.env.SERVER_PORT || 5000,
+		handler: {
+			options: {
+				payload: {
+					maxBytes: 1024 * 1024 * 100,
+					parse: true,
+					output: 'stream',
+					multipart: true
+				}
+			}
+		},
         api: {
             routes: {
                 util: {
@@ -19,9 +29,9 @@ export const config = {
                     get: {
                         card: '/api/v1/get/card'
                     },
-                    post: {
-                        card: '/api/v1/post/card',
-                        tag: '/api/v1/post/tag'
+                    set: {
+                        card: '/api/v1/set/card',
+                        tag: '/api/v1/set/tag'
                     }
                 }
             }

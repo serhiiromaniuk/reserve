@@ -42,9 +42,7 @@ describe('test', () => {
 		const tgtTbl = Names.places_locations
 
 		const get = await tx
-			.select(
-				'*'
-			)
+			.select('*')
 			.from(tbl)
 			.where(tbl + '.id', plcData.id)
 			.leftJoin(

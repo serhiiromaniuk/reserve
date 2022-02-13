@@ -4,7 +4,7 @@ const { server } = config
 
 export default {
     method: 'POST',
-    path: server.api.routes.v1.post.tag,
+    path: server.api.routes.v1.set.tag,
     handler: async (req, h) => {
         try {
             const { payload } = req

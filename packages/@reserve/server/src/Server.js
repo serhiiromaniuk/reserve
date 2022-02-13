@@ -13,6 +13,14 @@ import Inert from '@hapi/inert'
         server.route(Ping.default)
         server.route(GetCard.default)
 
+        server.events.on('response', (r, e) => {
+            console.log(
+                r.info.remoteAddress + ' ' + 
+				r.response.statusCode + ' ' +
+                r.method.toUpperCase() + ' ' +
+                r.path
+            )
+        })
         try {
             await server.start()
             console.log('NODE_ENV:', process.env.NODE_ENV, 'Server running on', server.info.uri)

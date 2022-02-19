@@ -1,6 +1,6 @@
 import knex from 'knex'
 import { config } from '@reserve/utils'
-import { Names, Client, knexfile } from '@reserve/database'
+import { Names, Client } from '@reserve/database'
 
 const path = config.server.api.routes.v1.get.card
 const { options } = config.server.handler

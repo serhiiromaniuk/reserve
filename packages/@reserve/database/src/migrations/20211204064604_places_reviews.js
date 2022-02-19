@@ -12,7 +12,6 @@ export function up(knex) {
             tx.foreign('place_id').references('id')
                 .inTable(Names.places_details)
         }
-        
     )
 }
 

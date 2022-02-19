@@ -21,7 +21,9 @@ async function handler(req, h) {
 		const q = await tx
 			.select(!!select ? tbl + '.' + select : '*')
 			.from(tbl)
-			.where(tbl + '.id', id)
+			.where(!!id ? {
+				[tbl + '.id']: id
+			} : {})
 			.leftJoin(
 				tgtTbl,
 				'location_id',
@@ -35,11 +37,14 @@ async function handler(req, h) {
 			message: q[0]
 		}
 	} catch (error) {
+		const message = error.sqlMessage
 		await tx.destroy()
+
+		console.error('=>', message)
 		return h.response(
 			{
 				ok: false,
-				message: error
+				message
 			}
 		).code(400)
 	}

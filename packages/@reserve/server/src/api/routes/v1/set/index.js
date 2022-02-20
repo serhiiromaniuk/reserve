@@ -1,1 +1,1 @@
-export * as PostCard from './card'
+export * as SetCard from './card'

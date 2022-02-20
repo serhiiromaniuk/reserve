@@ -1,5 +1,8 @@
 import { config } from '@reserve/utils'
-import { Ping, GetCard } from './api'
+import { 
+	Ping, GetCard,
+	SetCard
+} from './api'
 import Hapi from '@hapi/hapi'
 import Inert from '@hapi/inert'
 
@@ -12,6 +15,7 @@ import Inert from '@hapi/inert'
 
         server.route(Ping.default)
         server.route(GetCard.default)
+        server.route(SetCard.default)
 
         server.events.on('response', (r, e) => {
             console.log(

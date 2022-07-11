@@ -29,7 +29,7 @@
     "@reserve/database": "0.0.1",
     "@hapi/hapi": "20.1.4",
     "@hapi/inert": "6.0.3",
-    "aws-sdk": "2.929.0",
+    "aws-sdk": "2.1172.0",
     "dotenv": "14.2.0",
     "knex": "0.95.14",
     "mysql": "2.18.1"

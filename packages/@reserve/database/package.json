@@ -38,7 +38,7 @@
     "@reserve/utils": "0.0.1",
     "aws-sdk": "^2.929.0",
     "dotenv": "^14.2.0",
-    "knex": "^0.95.14",
+    "knex": "^2.4.2",
     "mysql": "^2.18.1"
   },
   "devDependencies": {
